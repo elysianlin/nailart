@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nail.css">
+    <title>NailArt • Nail Talk </title>
+    <link rel="icon" href="images/logo.ico" type="img/x-ico" />
+</head>
+
+<script>
+    const footer = document.querySelector('footer, .site-footer');
+    const ioFooter = new IntersectionObserver(
+        ([entry]) => {
+        document.body.classList.toggle('at-footer', entry.intersectionRatio > 0.35);
+        },
+        {
+        threshold: [0, 0.35, 1],
+        rootMargin: '0px 0px 0px 0px'
+        }
+    );
+
+    if (footer) ioFooter.observe(footer);
+</script>
+
+
+<body>
+    <div class="top">Elysian Lin • NailArt Studio • Nail Talk</div>
+    <header>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="nail.html">Nail Talk</a>
+            </nav>
+            <a class="logo" href="home.html"><img src="images/logo.png"></a>           
+    </header>
+
+    <div class="hero_center">
+        <h1>Basic Tools & Uses</h1>
+    </div>
+
+    <section class="prepare">
+        <h2>Nail Preparation Tools</h2>
+
+        <div class="tool">
+            <img src="images/electic nail drill.jpg" alt="Electric Nail Drill Kit">
+            <h3>Electric Nail Drill Kit</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Improves efficiency; suitable for nail removal, cuticle care, and surface preparation.</li>
+            <li><strong>Notes:</strong> Use proper speed control and correct angle to avoid burning yourself.</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <img src="images/nail clippers.jpg" alt="Nail Clippers for Acrylic Nails">
+            <h3>Nail Clippers for Acrylic Nails</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Trim acrylic or artificial nails to the desired length quickly and cleanly.</li>
+            <li><strong>Notes:</strong> Cut slowly and evenly to avoid cracking the nail.</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <img src="images/buffer block.jpg" alt="Buffer Block">
+            <h3>Buffer Block</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Smooth the nail surface, improve polish adhesion, and remove small scratches.</li>
+            <li><strong>Notes:</strong> Avoid over-buffing; it can thin and weaken the natural nail.</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <img src="images/steel pusher.jpg" alt="Steel Pusher">
+            <h3>Steel Pusher</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Push back dead skin and keratin around the nail edges and grooves.</li>
+            <li><strong>Notes:</strong> Beginners should use cuticle softener and push gently to avoid injuring the nail root.</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <img src="images/cuticle pusher.jpg" alt="Cuticle Pusher & Nail Nipper">
+            <h3>Cuticle Pusher & Nail Nipper</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Remove dead skin around the nail for a cleaner surface and better gel adhesion.</li>
+            <li><strong>Notes:</strong> Disinfect tools before and after each use to prevent infection.</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <img src="images/cuticle oil.jpg" alt="Cuticle Oil">
+            <h3>Cuticle Oil</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Moisturizes and nourishes the cuticles, keeping nails flexible and healthy.</li>
+            <li><strong>Notes:</strong> Apply after finishing your manicure for a natural shine and hydration boost.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gel">
+        <h2>Functional Gel</h2>
+
+        <div class="tool">
+            <img src="images/base coat.jpg" alt="Base Coat">
+            <h3>Base Coat</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Protects the natural nail and improves adhesion of the color gel.</li>
+            <li><strong>Notes:</strong> Apply a thin, even layer. Avoid getting gel on the skin or cuticle area.</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <img src="images/bulder gel.jpg" alt="Builder Gel">
+            <h3>Builder Gel</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Strengthens the nail surface and helps extend nail length if needed.</li>
+            <li><strong>Notes:</strong> Control the thickness and avoid over-curing under the UV lamp.</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <img src="images/top coat.jpg" alt="Top Coat">
+            <h3>Top Coat</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Seals the color, adds shine, and protects the nail surface from scratches.</li>
+            <li><strong>Notes:</strong> Avoid water or lotion for 30 minutes after curing for the best result.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="lamp">
+        <h2>Nail Curing Lamps</h2>
+
+        <div class="tool">
+            <img src="images/nail lamp pen.jpg" alt="Handheld Nail Lamp">
+            <h3>Handheld UV/LED Nail Lamp</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Portable and convenient for curing small areas such as one finger or nail art details.</li>
+            <li><strong>Notes:</strong> Hold about 1–2 inches away from the nail surface; ideal for quick touch-ups or travel use.</li>
+            </ul>
+        </div>
+
+        <div class="tool">
+            <img src="images/nail lamp.jpg" alt="Dome Nail Lamp">
+            <h3>Dome-Style Nail Lamp</h3>
+            <ul>
+            <li><strong>Purpose:</strong> Designed for curing the whole hand or both hands at once with strong and even UV/LED light.</li>
+            <li><strong>Notes:</strong> Make sure all nails are evenly exposed to the light. Avoid looking directly at the LEDs during curing.</li>
+            </ul>
+        </div>
+    </section>
+
+
+<footer class="site-footer">
+    <nav class="footer-nav">
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="nail.html">Nail Talk</a></li>
+        </ul>
+    </nav>
+
+    <p class="legal">
+        ©copyright 2025. All rights reserved.
+    </p>
+    <p class="policies">
+        <a href="#">Terms of Service</a>
+        <span class="dot">•</span>
+        <a href="#">Privacy Policy</a>
+    </p>
+
+    <div class="social">
+        <a class="social__link facebook" href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" data-color="images/facebook-Icon-color.png" alt="Facebook icon">
+        </a>
+
+        <a class="social__link instagram" href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" data-color="images/instagram-Icon-color.png" alt="Instagram icon">
+        </a>
+
+        <a class="social__link youtube" href="https://youtube.com" target="_blank">
+            <img src="images/youtube.png" data-color="images/youtube-Icon-color.png" alt="YouTube icon">
+        </a>
+    </div>
+    <script>
+        document.querySelectorAll('.social__link').forEach(link => {
+        const img = link.querySelector('img');
+        const graySrc  = img.getAttribute('src');
+        const colorSrc = img.dataset.color;
+
+        link.addEventListener('mouseenter', () => {
+            img.src = colorSrc;
+        });
+
+        link.addEventListener('mouseleave', () => {
+            img.src = graySrc;
+        });
+        });
+    </script>
+    <img class="footer-logo" src="images/logo.png" alt="Elysian Logo">
+    <div class="bottom">Designed by Elysian</div>
+
+</footer>

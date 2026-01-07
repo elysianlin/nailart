@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&family=DM+Serif+Display:ital@0;1&display=swap');
+
+.top {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5rex;
+    padding: 15px 0;
+    background-color: #19150f;
+    color: white;
+}
+header {
+    font-family: "Raleway", sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color:black;
+    padding: 10px 30px;
+}
+
+header nav {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start; 
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+header nav a{
+    text-decoration: none;
+    margin: 10px 40px;
+    padding: 8px 15px; 
+    color:inherit;
+    font-size: 20px; 
+    transition: all 0.2s ease;
+    flex-shrink: 0; 
+}  
+
+
+header nav a:hover {
+    color:#93908b;
+    transition: color 0.3s ease;
+}
+
+.logo { 
+    flex:2;  
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    right: 50%;
+    left:50%;
+}
+
+.logo img {
+    width:85px;
+}
+
+.hero {
+    color:white;
+    height:85vh;
+    background-image: url(images/header.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.angry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* consistent image sizes */
+    grid-auto-rows: 300px; 
+    gap: 25px; 
+    padding: 30px 5vw; /* use % padding for responsive spacing */
+    box-sizing: border-box;
+    margin-top: 55px;
+}
+
+
+.angry-grid div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.angry-grid div:hover {
+  transform: scale(1.05);
+}
+
+#item-0 { grid-row: span 2; grid-column: span 2; background-image: url("images/fxn 2025-07-13 123616.480.JPG"); }
+#item-1 { grid-column: span 2; background-image: url("images/fxn 2025-10-18 181837.863.jpg"); }
+#item-2 { grid-row: span 2; grid-column: span 2; background-image: url("images/fxn 2025-10-27 142305.557.JPG"); }
+#item-3 { grid-row: span 1; grid-column: span 1; background-image: url("images/fxn 2025-11-04 105125.611.JPG"); }
+#item-4 { grid-column: span 1; background-image: url("images/IMG_5982.JPG"); }
+#item-5 { grid-column: span 2; grid-row: span 2; background-image:url("images/IMG_6652.JPG"); }
+#item-6 { grid-row: span 2; grid-column: span 1; background-image:url("images/fxn\ 2025-11-10\ 172232.566.jpg"); }
+#item-7 { grid-column: span 1; background-image:url(images/fxn\ 2025-11-04\ 105112.521.JPG); }
+#item-8 { grid-column: span 1; background-image:url(images/fxn\ 2025-11-10\ 173035.820.jpg); }
+#item-9 { grid-column: span 1; background-image: url(images/fxn\ 2025-09-30\ 110824.702.JPG); }
+#item-10 { grid-column: span 2; grid-row: span 1; background-image:url("images/fxn\ 2025-04-27\ 145531.701.JPG"); }
+#item-11 { grid-column: span 1; grid-row: span 1; background-image:url(images/fxn\ 2025-08-04\ 141922.655.JPG); }
+
+
+footer {
+    font-family: "Raleway", sans-serif;
+;
+}
+.site-footer{
+    position:relative;
+    border-top:1px solid #dfe0e1;
+    text-align:center;
+    padding: 36px 0 0;
+    z-index: 10;
+}
+
+body.at-footer .quicklinks_item,
+body.at-footer .fade-up {
+  transition: none !important;
+}
+
+.footer-nav {
+    padding-bottom: 25px;
+}
+.footer-nav ul{
+    list-style:none;
+    margin:0 0 18px;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0;
+    flex-wrap:wrap;
+}
+
+.footer-nav li{
+    position:relative;
+    padding: 20px 80px;
+}
+
+.footer-nav li:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+    width:1px;
+    height:28px;
+    background:#dfe0e1;              
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color:#8d8e8f;
+    font-weight:500;
+    letter-spacing:.08em;
+    transition: color .2s ease, transform .2s ease;
+}
+
+.footer-nav a:hover{
+    color:#3c3b3c;
+    transform: translateY(-2px);
+}
+
+.legal{ 
+    margin: 6px 0 6px; 
+    color:#b9b9b9; 
+    letter-spacing: 0.08em;
+}
+.policies{ 
+    margin: 0 0 16px; 
+    color:#b9b0b9; }
+.policies a{
+    color:#b9b0b9;
+    text-decoration:none;
+    transition: color .2s ease;
+}
+.policies .dot{ margin: 0 8px; }
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin-top: 50px;
+}
+
+.social__link {
+    position:relative;
+    display:inline-flex;
+    align-items: center;
+    gap:4px;
+    color:inherit;
+    transition: gap .25s ease, transform .25s ease;
+}
+
+.social__link:hover{ gap:14px; } 
+
+.social__link img {
+    width:35px;
+    height:35px;
+    display:block;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+
+.social__link:hover img {
+    transform: scale(1.02);
+}
+
+.social__link:hover {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+    margin:60px auto 0;
+    opacity: .9;
+}
+
+@media (max-width: 640px) {
+    .footer-nav li {padding: 8px 16px};
+    .footer-nav li::not(:last-child)::after {height: 22px};
+    .social { gap:16px; }
+}
+
+.bottom {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5rex;
+    padding: 35px 0;
+    background-color: #19150f;
+    color: #19150f;
+    margin-top: 55px;
+}

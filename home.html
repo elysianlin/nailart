@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>NailArt • Home </title>
+    <link rel="icon" href="images/logo.ico" type="img/x-ico" />
+</head>
+
+<script>
+    const footer = document.querySelector('footer, .site-footer');
+    const ioFooter = new IntersectionObserver(
+        ([entry]) => {
+        document.body.classList.toggle('at-footer', entry.intersectionRatio > 0.35);
+        },
+        {
+        threshold: [0, 0.35, 1],
+        rootMargin: '0px 0px 0px 0px'
+        }
+    );
+
+    if (footer) ioFooter.observe(footer);
+</script>
+
+
+<body>
+    <div class="top">Elysian Lin • NailArt Studio • Home</div>
+    <header>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="nail.html">Nail Talk</a>
+            </nav>
+            <a class="logo" href="home.html"><img src="images/logo.png"></a>           
+    </header>
+
+    <section class="hero">
+        <div class="hero_grid">
+            <h2>NailArt Studio</h2>
+            <p>Turning fingertips into tiny masterpieces, one stroke at a time.</p>
+            <a href="gallery.html">View All Artworks → </a> 
+        </div>
+    </section>
+
+    <section class="aboutme">
+        <h2 class="aboutme_title fade-up delay-1">About Me</h2>
+            <div class="fade-up delay-2">
+            <img src="images/aboutme.jpg" alt="About Me">
+            </div>
+            <aritcle class="text fade-up delay-3">
+                <p>I'm from Taiwan.</p>
+                <p>Student at BYUI</p>
+                <ul>
+                    <li>Major: Biochemistry</li>
+                    <li>Minor: Web Development</li>
+                </ul>
+                <p>I love doing nail art. It’s my favorite way to relax and get creative. 
+                    I enjoy designing nails for myself and my sisters, turning simple ideas into fun and colorful designs.</p>
+            </aritcle>
+    </section>
+
+    <section class="artworks">
+        <div class="artwork_text">
+            <h1>Artworks</h1>
+            <a href = "gallery.html"> View All Artworks → </a>
+        </div>
+        <div class="artworks_img">
+            <img src="images/tomato.JPG">
+            <img src="images/happy.JPG">
+            <img src="images/blue.JPG">
+        </div>
+    </section>
+</body>
+
+<footer class="site-footer">
+    <nav class="footer-nav">
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="nail.html">Nail Talk</a></li>
+        </ul>
+    </nav>
+
+    <p class="legal">
+        ©copyright 2025. All rights reserved.
+    </p>
+    <p class="policies">
+        <a href="#">Terms of Service</a>
+        <span class="dot">•</span>
+        <a href="#">Privacy Policy</a>
+    </p>
+
+    <div class="social">
+        <a class="social__link facebook" href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" data-color="images/facebook-Icon-color.png" alt="Facebook icon">
+        </a>
+
+        <a class="social__link instagram" href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" data-color="images/instagram-Icon-color.png" alt="Instagram icon">
+        </a>
+
+        <a class="social__link youtube" href="https://youtube.com" target="_blank">
+            <img src="images/youtube.png" data-color="images/youtube-Icon-color.png" alt="YouTube icon">
+        </a>
+    </div>
+    <script>
+        document.querySelectorAll('.social__link').forEach(link => {
+        const img = link.querySelector('img');
+        const graySrc  = img.getAttribute('src');
+        const colorSrc = img.dataset.color;
+
+        link.addEventListener('mouseenter', () => {
+            img.src = colorSrc;
+        });
+
+        link.addEventListener('mouseleave', () => {
+            img.src = graySrc;
+        });
+        });
+    </script>
+    <img class="footer-logo" src="images/logo.png" alt="Elysian Logo">
+    <div class="bottom">Designed by Elysian</div>
+
+</footer>

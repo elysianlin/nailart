@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <title>NailArt • Gallery </title>
+    <link rel="icon" href="images/logo.ico" type="img/x-ico" />
+</head>
+
+<script>
+    const footer = document.querySelector('footer, .site-footer');
+    const ioFooter = new IntersectionObserver(
+        ([entry]) => {
+        document.body.classList.toggle('at-footer', entry.intersectionRatio > 0.35);
+        },
+        {
+        threshold: [0, 0.35, 1],
+        rootMargin: '0px 0px 0px 0px'
+        }
+    );
+
+    if (footer) ioFooter.observe(footer);
+</script>
+
+
+<body>
+    <div class="top">Elysian Lin • NailArt Studio • Gallery</div>
+    <header>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="nail.html">Nail Talk</a>
+            </nav>
+            <a class="logo" href="home.html"><img src="images/logo.png"></a>           
+    </header>
+    <div class="angry-grid">
+        <div id="item-0">&nbsp;</div>
+        <div id="item-1">&nbsp;</div>
+        <div id="item-2">&nbsp;</div>
+        <div id="item-3">&nbsp;</div>
+        <div id="item-4">&nbsp;</div>
+        <div id="item-5">&nbsp;</div>
+        <div id="item-6">&nbsp;</div>
+        <div id="item-7">&nbsp;</div>
+        <div id="item-8">&nbsp;</div>
+        <div id="item-9">&nbsp;</div>
+        <div id="item-10">&nbsp;</div>
+        <div id="item-11">&nbsp;</div>
+        <div id="item-12">&nbsp;</div>
+        <div id="item-13">&nbsp;</div>
+        <div id="item-14">&nbsp;</div>
+        <div id="item-15">&nbsp;</div>
+    </div>
+</body>
+
+<footer class="site-footer">
+    <nav class="footer-nav">
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="nail.html">Nail Talk</a></li>
+        </ul>
+    </nav>
+
+    <p class="legal">
+        ©copyright 2025. All rights reserved.
+    </p>
+    <p class="policies">
+        <a href="#">Terms of Service</a>
+        <span class="dot">•</span>
+        <a href="#">Privacy Policy</a>
+    </p>
+
+    <div class="social">
+        <a class="social__link facebook" href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" data-color="images/facebook-Icon-color.png" alt="Facebook icon">
+        </a>
+
+        <a class="social__link instagram" href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" data-color="images/instagram-Icon-color.png" alt="Instagram icon">
+        </a>
+
+        <a class="social__link youtube" href="https://youtube.com" target="_blank">
+            <img src="images/youtube.png" data-color="images/youtube-Icon-color.png" alt="YouTube icon">
+        </a>
+    </div>
+    <script>
+        document.querySelectorAll('.social__link').forEach(link => {
+        const img = link.querySelector('img');
+        const graySrc  = img.getAttribute('src');
+        const colorSrc = img.dataset.color;
+
+        link.addEventListener('mouseenter', () => {
+            img.src = colorSrc;
+        });
+
+        link.addEventListener('mouseleave', () => {
+            img.src = graySrc;
+        });
+        });
+    </script>
+    <img class="footer-logo" src="images/logo.png" alt="Elysian Logo">
+    <div class="bottom">Designed by Elysian</div>
+
+</footer>
